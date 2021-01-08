@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <style>
+       
+      </style>
+  </head>
+<body>
+    <ion-app>
+        <ion-header>
+          <ion-toolbar color="secondary">
+            <ion-buttons slot="end">
+              <ion-button fill="solid" href="Profil.html" >
+                Canals
+                <ion-icon slot="start" name="school"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button fill="solid" href="Profil.html">
+                  Profil
+                  <ion-icon slot="start" name="person"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            <ion-buttons slot="start">
+                <ion-menu-button auto-hide="false"></ion-menu-button>
+              </ion-buttons>
+              <ion-buttons slot="primary">
+                <ion-button fill="outline" color="danger"  href="login.html">
+                  <ion-icon slot="start" name="log-out"></ion-icon>
+                  Log out
+                </ion-button>
+              </ion-buttons>
+              <ion-buttons slot="primary">
+                <ion-button fill="solid" href="canaux.html">
+                  Canals
+                  <ion-icon slot="start" name="school"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+              <ion-buttons slot="primary">
+                <ion-button fill="solid" href="conversation.html">
+                  Conversation
+                  <ion-icon slot="start" name="chatbubbles"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            <ion-title>ENSIAS courses</ion-title>
+            <ion-buttons slot="primary">
+              <ion-button fill="solid"  href="Assignments.html">
+                Assignments
+                <ion-icon slot="start" name="clipboard"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="primary">
+                <ion-button fill="solid" color="medium" href="canal.html">
+                  <ion-icon slot="start" name="book"></ion-icon>
+                  Files
+                </ion-button>
+              </ion-buttons>
+              
+          </ion-toolbar>
+        </ion-header>
+        <ion-content >
+            
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>Add File</ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <ion-item>
+                                    <ion-label position="floating">File title</ion-label>
+                                    <ion-input type="text" id="input-reason"></ion-input>
+                                </ion-item>
+                                
+                                <ion-item>
+                                    <ion-label position="floating">Choose file </ion-label>
+                                    <ion-input type="file" class="custom-file-input" value="medium" color="danger" ></ion-input>
+                                      
+                                </ion-item>
+                                
+                                
+                                
+    
+                             
+    
+                                <div class="ion-margin-vertical ion-text-right">
+                                    <ion-button fill="outline" color="danger" id="btn-cancel">
+                                        <ion-icon name="close" slot="start"></ion-icon>Clear</ion-button>
+                                    <ion-button id="btn-confirm">
+                                        <ion-icon name="checkmark" slot="start"></ion-icon>Add</ion-button>
+                                </div>
+                                
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+               
+            </ion-grid>
+            
+        </ion-content>
+        <ion-alert-controller></ion-alert-controller>
+    </ion-app>
+    <script src="app.js"></script>
+</body>
+</html>

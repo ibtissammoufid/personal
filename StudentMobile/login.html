@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+          <ion-toolbar color="secondary">
+            
+              
+            <ion-buttons slot="start">
+                <ion-menu-button auto-hide="false"></ion-menu-button>
+              </ion-buttons>
+              
+            <ion-title>ENSIAS courses</ion-title>
+            
+          
+
+             
+
+          </ion-toolbar>
+        </ion-header>
+        <ion-content >
+            
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="4" offset-md="4">
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title color="primary" style="text-align:center;">LOGIN</ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <ion-item>
+                                    <ion-label position="floating">Email </ion-label>
+                                    <ion-input type="text" id="input-reason"></ion-input>
+                                </ion-item>
+                                
+                                <ion-item>
+                                    <ion-label position="floating">Password</ion-label>
+                                    <ion-input type="text" id="input-reason"></ion-input>
+                                </ion-item>
+                                
+                              <br>
+                              <ion-text slot="end" color="danger" href="https://www.ionicframework.com">
+                                <h4 >Forgot your password?</h4>
+                              </ion-text>
+                              
+                               
+                              <br><br>
+                             
+    
+                                <div class="ion-margin-vertical ion-text-right">
+                                    <ion-button fill="outline" color="danger" id="btn-cancel">
+                                        <ion-icon name="close" slot="start"></ion-icon>Cancel</ion-button>
+                                    <ion-button id="btn-confirm" href="canaux.html">
+                                        <ion-icon name="log-in" slot="start" ></ion-icon>Login</ion-button>
+                                </div>
+                                
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+               
+            </ion-grid>
+            <ion-tabs>
+
+              <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="profile">
+                  <ion-icon name="information-circle-outline"></ion-icon>
+                  <ion-label>About</ion-label>
+                </ion-tab-button>
+            
+                <ion-tab-button tab="dashboard" >
+                  <ion-icon name="log-in" color="secondary"></ion-icon>
+                  <ion-label>Log in</ion-label>
+                </ion-tab-button>
+            
+                
+              </ion-tab-bar>
+            
+            </ion-tabs>
+            
+        </ion-content>
+        <ion-alert-controller></ion-alert-controller>
+    </ion-app>
+    <script src="app.js"></script>
+</body>
+</html>

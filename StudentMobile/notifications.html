@@ -12,26 +12,12 @@
     <ion-app>
         <ion-header>
           <ion-toolbar color="secondary">
-            <ion-buttons slot="end">
-                <ion-button fill="solid" >
-                  Profil
-                  <ion-icon slot="start" name="person"></ion-icon>
-                </ion-button>
-              </ion-buttons>
+            
             <ion-buttons slot="start">
                 <ion-menu-button auto-hide="false"></ion-menu-button>
               </ion-buttons>
-              
-            <ion-title>ENSIAS courses</ion-title>
-            
-            <ion-buttons slot="primary">
-                <ion-button fill="outline" >
-                  <ion-icon slot="start" name="log-out"></ion-icon>
-                  Log out
-                </ion-button>
-              </ion-buttons>
 
-             
+            <ion-title>ENSIAS courses</ion-title>
 
           </ion-toolbar>
         </ion-header>
@@ -39,39 +25,13 @@
             <ion-grid>
 
                 <ion-row>
-                  <ion-col  size="4" >
-                    <ion-card>
-                      <ion-item href="Profil.html">
-                        <ion-icon name="information-circle" slot="start" ></ion-icon>
-                        <ion-label >Personal Information</ion-label>
-                      </ion-item>
-                    
-                      <ion-item href="notifications.html"   color="danger">
-                        <ion-icon name="Notifications" slot="start"></ion-icon>
-                        <ion-label>Notifications</ion-label>
-                      </ion-item>
-                    
-                      <ion-item href="canaux.html" class="ion-activated">
-                        <ion-icon name="school" slot="start"></ion-icon>
-                        <ion-label>Canals</ion-label>
-                      </ion-item>
-                      <ion-item href="password.html" class="ion-activated">
-                        <ion-icon name="key" slot="start"></ion-icon>
-                        <ion-label>Change Password</ion-label>
-                      </ion-item>
-                    
-                      <ion-item href="password.html" class="ion-activated">
-                        <ion-icon name="help-circle" slot="start"></ion-icon>
-                        <ion-label>Help</ion-label>
-                      </ion-item>
-                    </ion-card>
-                  </ion-col>
-                  <ion-col  size="8" >
+                  
+                  <ion-col size-md="6" offset-md="3">
                     <ion-card>
                         <ion-item>
                           <ion-icon name="pin" slot="start"></ion-icon>
-                          
-                          <ion-card-title>Grades from TEC 2A</ion-card-title>
+                          <ion-card-subtitle>Grades from TEC 2A</ion-card-subtitle>
+                         
                           <ion-button fill="outline" slot="end">View</ion-button>
                           
                         </ion-item>
@@ -88,8 +48,8 @@
                     <ion-card>
                         <ion-item>
                           <ion-icon name="pin" slot="start"></ion-icon>
+                          <ion-card-subtitle>Message from Fatima Nasri</ion-card-subtitle>
                           
-                          <ion-card-title>Message from Fatima Nasri</ion-card-title>
                           <ion-button fill="outline" slot="end" href="conversation.html">View</ion-button>
                           
                         </ion-item>
@@ -104,8 +64,8 @@
                     <ion-card>
                         <ion-item>
                           <ion-icon name="pin" slot="start"></ion-icon>
+                          <ion-card-subtitle>Assignment from TEC 2A</ion-card-subtitle>
                           
-                          <ion-card-title>Assignment from TEC 2A</ion-card-title>
                           <ion-button fill="outline" slot="end" href="Assignments.html">View</ion-button>
                           
                         </ion-item>
@@ -120,8 +80,8 @@
                     <ion-card>
                         <ion-item>
                           <ion-icon name="pin" slot="start"></ion-icon>
-                          
-                          <ion-card-title>File from TEC 2A</ion-card-title>
+                          <ion-card-subtitle>File from TEC 2A</ion-card-subtitle>
+                          <ion-card-title></ion-card-title>
                           <ion-button fill="outline" slot="end" href="canal.html">View</ion-button>
                           
                         </ion-item>
@@ -136,7 +96,31 @@
                   </ion-col>
                 
                 </ion-row>
+                <ion-tabs>
+
+                  <ion-tab-bar slot="bottom">
+                    <ion-tab-button tab="profile">
+                      <ion-icon name="person-circle-outline" ></ion-icon>
+                      <ion-label>Profile</ion-label>
+                    </ion-tab-button>
                 
+                    <ion-tab-button tab="dashboard">
+                      <ion-icon name="school-outline" ></ion-icon>
+                      <ion-label>Canals</ion-label>
+                    </ion-tab-button>
+                
+                   
+                    <ion-tab-button tab="settings">
+                      <ion-icon name="Notifications" color="secondary"></ion-icon>
+                      <ion-label>Notifications</ion-label>
+                    </ion-tab-button>
+                    <ion-tab-button tab="settings">
+                      <ion-icon name="help-circle-outline" ></ion-icon>
+                      <ion-label>Help</ion-label>
+                    </ion-tab-button>
+                  </ion-tab-bar>
+                
+                </ion-tabs>
               </ion-grid>
             
             

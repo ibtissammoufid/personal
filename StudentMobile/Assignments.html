@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <style>
+       
+      </style>
+  </head>
+<body>
+    <ion-app>
+        <ion-header>
+          <ion-toolbar color="secondary">
+            
+            <ion-buttons slot="start">
+                <ion-menu-button auto-hide="false"></ion-menu-button>
+              </ion-buttons>
+              
+             
+           
+            <ion-title>ENSIAS courses</ion-title>
+            
+            
+              
+          </ion-toolbar>
+        </ion-header>
+        <ion-content >
+            
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                        
+                                <ion-card>
+                                    <ion-item>
+                                      <ion-icon name="cloud-upload-outline" slot="start"></ion-icon>
+                                      <ion-card-subtitle>Projet professionnel</ion-card-subtitle>
+                                    </ion-item>
+                                    <ion-card-content>
+                                        Posted on : 29-09-2020 <br>   
+                                      Return before : 07-10-2020 <br> 
+                                      Assignments description
+                                      <ion-card>
+                                        <ion-item  class="ion-activated">
+                                          <ion-icon name="attach" slot="start"></ion-icon>
+                                          <ion-label>Canvas projet professionnel </ion-label>
+                                          
+                                          <ion-icon name="cloud-download-outline" slot="end"></ion-icon>
+                                        </ion-item>
+                                        <ion-item  class="ion-activated">
+                                          <ion-icon name="attach" slot="start"></ion-icon>
+                                          <ion-label>Directives </ion-label>
+                                          <ion-icon name="cloud-download-outline" slot="end"></ion-icon>
+                                        </ion-item>
+                                    </ion-card>
+                                    </ion-card-content>
+                                </ion-card>
+                                
+                                <ion-card>
+                                  <ion-item>
+                                    <ion-icon name="cloud-upload-outline" slot="start"></ion-icon>
+                                    <ion-card-subtitle>Fiche technique</ion-card-subtitle>
+                                  </ion-item>
+                                  <ion-card-content>
+                                      Posted on : 29-09-2020 <br>   
+                                    Return before : 07-10-2020 <br> 
+                                    Assignments description
+                                    <ion-card>
+                                      <ion-item  class="ion-activated">
+                                        <ion-icon name="attach" slot="start"></ion-icon>
+                                        <ion-label>Canvas fiche technique </ion-label>
+                                        
+                                        <ion-icon name="cloud-download-outline" slot="end"></ion-icon>
+                                      </ion-item>
+                                      
+                                  </ion-card>
+                                  </ion-card-content>
+                              </ion-card>
+                           
+                                  
+                                
+                                
+                            </ion-card-content>
+                        </ion-card>
+                                  
+                                
+                                  
+                                
+                                
+                           
+                    </ion-col>
+                </ion-row>
+                <ion-tabs>
+
+                  <ion-tab-bar slot="bottom">
+                    <ion-tab-button tab="profile">
+                      <ion-icon name="person-circle-outline"></ion-icon>
+                      <ion-label>Profile</ion-label>
+                    </ion-tab-button>
+                
+                    <ion-tab-button tab="dashboard">
+                      <ion-icon name="school-outline" ></ion-icon>
+                      <ion-label>Canals</ion-label>
+                    </ion-tab-button>
+                
+                    <ion-tab-button tab="settings">
+                      <ion-icon name="chatbubbles-outline" ></ion-icon>
+                      <ion-label>Conversation</ion-label>
+                    </ion-tab-button>
+                    <ion-tab-button tab="settings">
+                      <ion-icon name="clipboard" color="secondary"></ion-icon>
+                      <ion-label>Assignments</ion-label>
+                    </ion-tab-button>
+                    <ion-tab-button tab="settings">
+                      <ion-icon name="book-outline" ></ion-icon>
+                      <ion-label>Files</ion-label>
+                    </ion-tab-button>
+                  </ion-tab-bar>
+                
+                </ion-tabs>
+            </ion-grid>
+            
+        </ion-content>
+        <ion-alert-controller></ion-alert-controller>
+    </ion-app>
+    <script src="app.js"></script>
+</body>
+</html>

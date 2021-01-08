@@ -12,47 +12,13 @@
     <ion-app>
         <ion-header>
           <ion-toolbar color="secondary">
-            <ion-buttons slot="end">
-                <ion-button fill="solid" href="Profil.html">
-                  Profil
-                  <ion-icon slot="start" name="person"></ion-icon>
-                </ion-button>
-              </ion-buttons>
+            
             <ion-buttons slot="start">
                 <ion-menu-button auto-hide="false"></ion-menu-button>
               </ion-buttons>
-              <ion-buttons slot="primary">
-                <ion-button fill="outline" color="danger"  href="login.html">
-                  <ion-icon slot="start" name="log-out"></ion-icon>
-                  Log out
-                </ion-button>
-              </ion-buttons>
-              <ion-buttons slot="primary">
-                <ion-button fill="solid" href="canaux.html">
-                  Canals
-                  <ion-icon slot="start" name="school"></ion-icon>
-                </ion-button>
-              </ion-buttons>
-              <ion-buttons slot="primary">
-                <ion-button fill="solid" color="medium" href="conversation.html">
-                  Conversation
-                  <ion-icon slot="start" name="chatbubbles"></ion-icon>
-                </ion-button>
-              </ion-buttons>
+
             <ion-title>ENSIAS courses</ion-title>
-            <ion-buttons slot="primary">
-              <ion-button fill="solid"  href="Assignments.html">
-                Assignments
-                <ion-icon slot="start" name="clipboard"></ion-icon>
-              </ion-button>
-            </ion-buttons>
-            <ion-buttons slot="primary">
-                <ion-button fill="solid"  href="canal.html">
-                  <ion-icon slot="start" name="book"></ion-icon>
-                  Files
-                </ion-button>
-              </ion-buttons>
-              
+
           </ion-toolbar>
         </ion-header>
         <ion-content >
@@ -60,9 +26,7 @@
             <ion-grid>
                 <ion-row>
                     <ion-col size-md="6" offset-md="3">
-                        <ion-card>
-                            
-                            <ion-card-content>
+                       
                                   
                                   <ion-card>
                                     <ion-item>
@@ -102,10 +66,10 @@
                                   </ion-card>
 
                                 
-                            </ion-card-content>
-                        </ion-card>
+                            
                     </ion-col>
                 </ion-row>
+                <br>
                 <ion-row>
                 <ion-col size-md="6" offset-md="3">
                     <ion-card>
@@ -115,16 +79,7 @@
                           <ion-item>
                                 
                             <ion-input type="text" slot="start" placeholder="Reply" id="input-reason"></ion-input>
-                            <input list="browsers"  placeholder="Send to">
-            <datalist id="browsers">
-              
-    <option value="Moufid Ibtissam"></option>
-    <option value="Zeroual Najlae"></option>
-    <option value="Nassrallah Meriem"></option>
-    <option value="Fatima Nasri"></option>
-    <option value="Soumia Ezzahid"></option>
-    <option value="All"></option>
-</datalist>
+       
                               <ion-buttons slot="end">
                                 <ion-button   href="conversation2.html">
                                   <ion-icon slot="end" name="send" color="danger"></ion-icon>
@@ -132,11 +87,38 @@
                                 </ion-button>
                               </ion-buttons>
                         </ion-item>
-                        </ion-card-content>
-                      </ion-card>
+                      </ion-card-content>
+                    </ion-card>
                 </ion-col>
                 </ion-row>
-               
+                <ion-tabs>
+
+                  <ion-tab-bar slot="bottom">
+                    <ion-tab-button tab="profile">
+                      <ion-icon name="person-circle-outline"></ion-icon>
+                      <ion-label>Profile</ion-label>
+                    </ion-tab-button>
+                
+                    <ion-tab-button tab="dashboard">
+                      <ion-icon name="school-outline" ></ion-icon>
+                      <ion-label>Canals</ion-label>
+                    </ion-tab-button>
+                
+                    <ion-tab-button tab="settings">
+                      <ion-icon name="chatbubbles" color="secondary"></ion-icon>
+                      <ion-label>Conversation</ion-label>
+                    </ion-tab-button>
+                    <ion-tab-button tab="settings">
+                      <ion-icon name="clipboard-outline" ></ion-icon>
+                      <ion-label>Assignments</ion-label>
+                    </ion-tab-button>
+                    <ion-tab-button tab="settings">
+                      <ion-icon name="book-outline" ></ion-icon>
+                      <ion-label>Files</ion-label>
+                    </ion-tab-button>
+                  </ion-tab-bar>
+                
+                </ion-tabs>
             </ion-grid>
             
         </ion-content>

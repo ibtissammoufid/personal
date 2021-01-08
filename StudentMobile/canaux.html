@@ -12,30 +12,14 @@
     <ion-app>
         <ion-header>
           <ion-toolbar color="secondary">
-            <ion-buttons slot="end">
-              <ion-button fill="solid" href="Profil.html" color="medium">
-                Canals
-                <ion-icon slot="start" name="school"></ion-icon>
-              </ion-button>
-            </ion-buttons>
-            <ion-buttons slot="end">
-                <ion-button fill="solid" href="Profil.html">
-                  Profil
-                  <ion-icon slot="start" name="person"></ion-icon>
-                </ion-button>
-              </ion-buttons>
+            
             <ion-buttons slot="start">
                 <ion-menu-button auto-hide="false"></ion-menu-button>
               </ion-buttons>
               
             <ion-title>ENSIAS courses</ion-title>
             
-            <ion-buttons slot="primary">
-                <ion-button fill="outline" color="danger">
-                  <ion-icon slot="start" name="log-out"></ion-icon>
-                  Log out
-                </ion-button>
-              </ion-buttons>
+            
 
              
 
@@ -110,11 +94,32 @@
                     </ion-col>
                 </ion-row>
             </ion-grid>
+            <ion-tabs>
+
+              <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="profile">
+                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <ion-label>Profile</ion-label>
+                </ion-tab-button>
             
+                <ion-tab-button tab="dashboard">
+                  <ion-icon name="school" color="secondary"></ion-icon>
+                  <ion-label>Canals</ion-label>
+                </ion-tab-button>
+            
+                <ion-tab-button tab="settings">
+                  <ion-icon name="log-out-outline" ></ion-icon>
+                  <ion-label>Log out</ion-label>
+                </ion-tab-button>
+              </ion-tab-bar>
+            
+            </ion-tabs>
             
         </ion-content>
+        
         <ion-alert-controller></ion-alert-controller>
     </ion-app>
+    
     <script>
       function myFunction() {
         location.replace("https://www.w3schools.com")

@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments</title>
+    <title>Conversation</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
-    <style>
-       
-      </style>
-  </head>
+</head>
 <body>
     <ion-app>
         <ion-header>
@@ -37,14 +34,14 @@
                 </ion-button>
               </ion-buttons>
               <ion-buttons slot="primary">
-                <ion-button fill="solid" href="conversation.html">
+                <ion-button fill="solid" color="medium" href="conversation.html">
                   Conversation
                   <ion-icon slot="start" name="chatbubbles"></ion-icon>
                 </ion-button>
               </ion-buttons>
             <ion-title>ENSIAS courses</ion-title>
             <ion-buttons slot="primary">
-              <ion-button fill="solid" color="medium" href="Assignments.html">
+              <ion-button fill="solid"  href="Assignments.html">
                 Assignments
                 <ion-icon slot="start" name="clipboard"></ion-icon>
               </ion-button>
@@ -64,77 +61,82 @@
                 <ion-row>
                     <ion-col size-md="6" offset-md="3">
                         <ion-card>
-                            <ion-card-header>
-                                <ion-card-title>TEC Assignments</ion-card-title>
-                            </ion-card-header>
+                            
                             <ion-card-content>
-                                <ion-card>
+                                  
+                                  <ion-card>
                                     <ion-item>
-                                      <ion-icon name="pin" slot="start"></ion-icon>
-                                      
-                                      <ion-card-title>Projet professionnel </ion-card-title>
-                                      <ion-input type="file" class="custom-file-input" value="medium" color="danger" slot="end"></ion-input>
-                                      
+                                      <ion-icon name="person" slot="start"></ion-icon>
+                                      <ion-label>Moufid Ibtissam</ion-label>
+                                      <ion-card-subtitle slot="end">Oct 1, 2020 11:15</ion-card-subtitle>
                                     </ion-item>
                                   
                                     <ion-card-content>
-                                        Posted on : 29-09-2020    
-                                      <ion-card-subtitle>Return before : 07-10-2020</ion-card-subtitle>
                                       This is content, without any paragraph or header tags,
                                       within an ion-card-content element.
-                                      <ion-card>
-                                        <ion-item href="#" class="ion-activated">
-                                          <ion-icon name="attach" slot="start"></ion-icon>
-                                          <ion-label>Canvas projet professionnel </ion-label>
-                                          <ion-button fill="outline" slot="end">Download</ion-button>
-                                        </ion-item>
-                                      
-                                        <ion-item href="#">
-                                          <ion-icon name="attach" slot="start"></ion-icon>
-                                          <ion-label>Directives</ion-label>
-                                          <ion-button fill="outline" slot="end">Download</ion-button>
-                                        </ion-item>
-                                    </ion-card>
                                     </ion-card-content>
-                                </ion-card>
-                                <ion-card>
+                                  </ion-card>
+                                  <ion-card>
                                     <ion-item>
-                                      <ion-icon name="pin" slot="start"></ion-icon>
-                                      
-                                      <ion-card-title>Fiche technique</ion-card-title>
-                                      <ion-input type="file" class="custom-file-input" value="medium" color="danger" slot="end"></ion-input>
-                                      
+                                      <ion-icon name="person" slot="start"></ion-icon>
+                                      <ion-label>Zeroual Najlae</ion-label>
+                                      <ion-card-subtitle slot="end">Oct 1, 2020 11:16</ion-card-subtitle>
                                     </ion-item>
                                   
                                     <ion-card-content>
-                                        Posted on : 29-09-2020    
-                                      <ion-card-subtitle>Return before : 07-10-2020</ion-card-subtitle>
                                       This is content, without any paragraph or header tags,
                                       within an ion-card-content element.
-                                      <ion-card>
-                                        <ion-item href="#" class="ion-activated">
-                                          <ion-icon name="attach" slot="start"></ion-icon>
-                                          <ion-label>Canvas fiche technique</ion-label>
-                                          <ion-button fill="outline" slot="end">Download</ion-button>
-                                        </ion-item>
-                                      
-                                        
-                                    </ion-card>
                                     </ion-card-content>
-                                </ion-card>
+                                  </ion-card>
+                                  <ion-card>
+                                    <ion-item>
+                                      <ion-icon name="person" slot="start"></ion-icon>
+                                      <ion-label>Nassrallah Meriem</ion-label>
+                                      <ion-card-subtitle slot="end">Oct 1, 2020 11:17</ion-card-subtitle>
+                                    </ion-item>
                                   
-                                
-                                
-                            </ion-card-content>
-                        </ion-card>
+                                    <ion-card-content>
+                                      This is content, without any paragraph or header tags,
+                                      within an ion-card-content element.
+                                    </ion-card-content>
+                                  </ion-card>
+                                  <ion-card>
+                                    <ion-item>
+                                      <ion-icon name="person" slot="start"></ion-icon>
+                                      <ion-label>Nasri Fatima</ion-label>
+                                      <ion-card-subtitle slot="end">Oct 1, 2020 12:09</ion-card-subtitle>
+                                    </ion-item>
                                   
-                                
-                                  
-                                
+                                    <ion-card-content>
+                                      msg
+                                    </ion-card-content>
+                                  </ion-card>
+
                                 
                             </ion-card-content>
                         </ion-card>
                     </ion-col>
+                </ion-row>
+                <ion-row>
+                <ion-col size-md="6" offset-md="3">
+                    <ion-card>
+                       
+                      
+                        <ion-card-content>
+                            <ion-item>
+                                
+                                <ion-input type="text" placeholder="Reply" id="input-reason"></ion-input>
+                               
+                                  <ion-buttons slot="end">
+                                    <ion-button   href="conversation2.html">
+                                      <ion-icon slot="end" name="send" color="danger"></ion-icon>
+                                     
+                                    </ion-button>
+                                  </ion-buttons>
+                            </ion-item>
+                        </ion-card-content>
+                      </ion-card>
+                </ion-col>
                 </ion-row>
                
             </ion-grid>
